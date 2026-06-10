@@ -11,12 +11,12 @@
     <style>
         :root {
             --primary-color: #111; /* أسود ملكي */
-            --accent-color: #d4af37; /* لمسة ذهبية فخمة */
+            --accent-color: #d4af37; /* لمسة ذهبية */
             --bg-light: #f8f9fa;
             --text-dark: #1a1a1a;
             --text-light: #ffffff;
-            --success-color: #25d366; /* لون الواتساب */
-            --phone-color: #007bff; /* لون الاتصال */
+            --success-color: #25d366; /* واتساب */
+            --phone-color: #007bff; /* إتصال */
         }
 
         * {
@@ -31,7 +31,6 @@
             color: var(--text-dark);
         }
 
-        /* الهيدر والشعار العلوي */
         header {
             background-color: var(--primary-color);
             color: var(--text-light);
@@ -43,7 +42,6 @@
         .logo-container h1 {
             font-weight: 900;
             font-size: 2.2rem;
-            letter-spacing: 1px;
         }
 
         .logo-container p {
@@ -52,9 +50,9 @@
             margin-top: 5px;
         }
 
-        /* بنر الواجهة الرئيسي */
+        /* تثبيت خلفيتك الجديدة الحصريّة هنا بدون تكرار */
         .hero-banner {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('File_000000003d78724399fb804a8defa1f2.png') no-repeat center center/cover;
             height: 450px;
             display: flex;
             flex-direction: column;
@@ -71,7 +69,6 @@
             font-weight: 700;
         }
 
-        /* نظام التبويبات الذكي للمخزون */
         .tabs-container {
             max-width: 1200px;
             margin: 40px auto 20px auto;
@@ -110,7 +107,6 @@
             gap: 30px;
         }
 
-        /* كرت السيارة الاحترافي */
         .car-card {
             background-color: white;
             border-radius: 8px;
@@ -120,7 +116,6 @@
             position: relative;
         }
 
-        /* سلايدر الصور بداخل الكرت */
         .image-slider {
             position: relative;
             height: 220px;
@@ -142,7 +137,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.6);
             color: white;
             border: none;
             padding: 8px 12px;
@@ -165,7 +160,6 @@
             font-weight: bold;
             border-radius: 3px;
             z-index: 11;
-            transform: rotate(5deg);
         }
 
         .car-details {
@@ -185,13 +179,12 @@
         }
 
         .car-price {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--accent-color);
             margin-bottom: 15px;
         }
 
-        /* أزرار التواصل أسفل الكرت */
         .card-actions {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -210,7 +203,6 @@
         .btn-whatsapp { background-color: var(--success-color); color: white; }
         .btn-call { background-color: var(--phone-color); color: white; }
 
-        /* قسم خدمات الاستيراد المخصصة */
         .import-banner {
             background-color: var(--primary-color);
             color: var(--text-light);
@@ -223,6 +215,7 @@
 
         .import-banner h3 { font-size: 2rem; margin-bottom: 15px; color: var(--accent-color); }
         .import-banner p { max-width: 800px; margin: 0 auto 25px auto; line-height: 1.8; }
+        
         .btn-import {
             display: inline-block;
             background-color: var(--success-color);
@@ -234,33 +227,6 @@
             font-size: 1.1rem;
         }
 
-        /* قسم محاكاة تقييمات جوجل ماب */
-        .reviews-section {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .review-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            text-align: right;
-            border-right: 4px solid var(--accent-color);
-        }
-
-        .review-stars { color: #ffbc0b; margin-bottom: 10px; }
-
-        /* الفوتر (أسفل الصفحة) */
         footer {
             background-color: var(--primary-color);
             color: #ccc;
@@ -271,7 +237,6 @@
 
         footer a { color: var(--accent-color); text-decoration: none; }
 
-        /* الأزرار العائمة في أسفل الشاشة لجوال الزائر */
         .floating-contact {
             position: fixed;
             bottom: 20px;
@@ -317,85 +282,136 @@
         <button class="tab-btn" onclick="switchTab('uae-showroom')">متوفر في الإمارات (جاهز للاستيراد)</button>
     </div>
 
+    <!-- صالة العرض: اليمن (صور حصرية غير مكررة) -->
     <div id="yemen-showroom" class="showroom-section active">
+        
+        <!-- 1. تويوتا هايلوكس دبل V6 -->
         <div class="car-card">
-            <div class="image-slider" id="slider-1">
-                <button class="slider-btn prev" onclick="changeSlide('slider-1', -1)">‹</button>
-                <img class="active" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=80" alt="صورة 1">
-                <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=500&q=80" alt="صورة 2">
-                <button class="slider-btn next" onclick="changeSlide('slider-1', 1)">›</button>
+            <div class="image-slider" id="slider-hilux">
+                <button class="slider-btn prev" onclick="changeSlide('slider-hilux', -1)">‹</button>
+                <img class="active" src="IMG-20260606-WA0021.jpg" alt="هايلوكس زاوية 1">
+                <img src="IMG-20260606-WA0022.jpg" alt="هايلوكس زاوية 2">
+                <img src="IMG-20260606-WA0023.jpg" alt="هايلوكس زاوية 3">
+                <img src="1780666770770.jpg" alt="هايلوكس زاوية 4">
+                <button class="slider-btn next" onclick="changeSlide('slider-hilux', 1)">›</button>
             </div>
             <div class="car-details">
                 <h4>تويوتا هايلوكس دبل V6</h4>
-                <p class="car-specs">الموديل: 2018 <br> المحرك: V6 4.0L <br> الفئة: SR5 / TRD</p>
-                <div class="car-price">اضغط للاستفسار عن السعر</div>
+                <p class="car-specs">الموديل: 2016 - 2020 <br> المحرك: V6 (4.0L) <br> الفئة: SR5 / TRD</p>
+                <div class="car-price">متوفر في الصالة - اتصل للحجز</div>
                 <div class="card-actions">
-                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20تويوتا%20هايلوكس%20دبل%202018" target="_blank" class="btn-action btn-whatsapp">واتساب</a>
+                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20تويوتا%20هايلوكس%20دبل" target="_blank" class="btn-action btn-whatsapp">واتساب</a>
                     <a href="tel:+967777577781" class="btn-action btn-call">إتصال</a>
                 </div>
             </div>
         </div>
 
+        <!-- 2. تويوتا لاندكروزر برادو -->
         <div class="car-card">
-            <span class="sold-badge">تم البيع 🛑</span>
-            <div class="image-slider" id="slider-2">
-                <img class="active" src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?auto=format&fit=crop&w=500&q=80" alt="برادو">
+            <div class="image-slider" id="slider-prado">
+                <button class="slider-btn prev" onclick="changeSlide('slider-prado', -1)">‹</button>
+                <img class="active" src="1780666942767.jpg" alt="برادو">
+                <img src="1780666740641.jpg" alt="برادو زاوية إضافية">
+                <button class="slider-btn next" onclick="changeSlide('slider-prado', 1)">›</button>
             </div>
             <div class="car-details">
-                <h4>تويوتا لاندكروزر برادو</h4>
-                <p class="car-specs">الموديل: 2016 <br> المحرك: V6 <br> الفئة: فل كامل</p>
-                <div class="car-price">---</div>
+                <h4>تويوتا لاندكروزر برادو V6</h4>
+                <p class="car-specs">الموديل: 2014 - 2017 <br> المحرك: V6 الفاخر</p>
+                <div class="car-price">جاهز للتسليم الفوري</div>
                 <div class="card-actions">
-                    <a href="#" class="btn-action btn-whatsapp" style="background-color: #aaa; pointer-events: none;">مباع</a>
+                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20تويوتا%20برادو" target="_blank" class="btn-action btn-whatsapp">واتساب</a>
                     <a href="tel:+967777577781" class="btn-action btn-call">إتصال</a>
                 </div>
             </div>
         </div>
+
+        <!-- 3. تويوتا كامري هايبرد -->
+        <div class="car-card">
+            <div class="image-slider" id="slider-camry">
+                <button class="slider-btn prev" onclick="changeSlide('slider-camry', -1)">‹</button>
+                <img class="active" src="1780666836316.jpg" alt="كامري">
+                <img src="1780666762983.jpg" alt="كامري لقطة أخرى">
+                <button class="slider-btn next" onclick="changeSlide('slider-camry', 1)">›</button>
+            </div>
+            <div class="car-details">
+                <h4>تويوتا كامري (Hybrid SE/XSE)</h4>
+                <p class="car-specs">الموديل: 2021 - 2024 <br> المحرك: 4-Cylinder Hybrid اقتصادية وقوية</p>
+                <div class="car-price">اضغط للاستفسار والسعر</div>
+                <div class="card-actions">
+                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20تويوتا%20كامري%20هايبرد" target="_blank" class="btn-action btn-whatsapp">واتساب</a>
+                    <a href="tel:+967777577781" class="btn-action btn-call">إتصال</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
+    <!-- صالة العرض: الإمارات (شحن واستيراد فوري وصور مخصصة للطلب) -->
     <div id="uae-showroom" class="showroom-section">
+        
+        <!-- 1. تويوتا شاص بيك أب LC79 -->
         <div class="car-card">
-            <div class="image-slider" id="slider-3">
-                <img class="active" src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=500&q=80" alt="سيارة الإمارات">
+            <div class="image-slider" id="slider-shas">
+                <button class="slider-btn prev" onclick="changeSlide('slider-shas', -1)">‹</button>
+                <img class="active" src="1780666861258.jpg" alt="شاص بيك أب">
+                <img src="1780666856996.jpg" alt="شاص لقطة ثانية">
+                <button class="slider-btn next" onclick="changeSlide('slider-shas', 1)">›</button>
             </div>
             <div class="car-details">
-                <h4>تويوتا شاص بيك أب (LC79)</h4>
-                <p class="car-specs">الموديل: 2022 <br> المحرك: V6 1GR-FE <br> الحالة: جاهز للاستيراد الفوري</p>
-                <div class="car-price">حسب الطلب للمواصفات</div>
+                <h4>تويوتا لاندكروزر بيك أب (LC79)</h4>
+                <p class="car-specs">الموديل: 2014 - 2022 <br> المحرك: V6 (4.0L 1GR-FE)</p>
+                <div class="car-price">متاح للاستيراد بعقود رسمية</div>
                 <div class="card-actions">
-                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20الشاص%20المعروض%20للاستيراد%20من%20الإمارات" target="_blank" class="btn-action btn-whatsapp">طلب استيراد</a>
+                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20الشاص%20البيك%20أب%20للاستيراد" target="_blank" class="btn-action btn-whatsapp">طلب استيراد</a>
                     <a href="tel:+967777577781" class="btn-action btn-call">إتصال</a>
                 </div>
             </div>
         </div>
+
+        <!-- 2. لاندكروزر كبسولة ربع طربوش مكشوف -->
+        <div class="car-card">
+            <div class="image-slider" id="slider-lc71soft">
+                <button class="slider-btn prev" onclick="changeSlide('slider-lc71soft', -1)">‹</button>
+                <img class="active" src="1780666871905.jpg" alt="كبسولة طربوش">
+                <img src="1780666780586.jpg" alt="لقطة كبسولة إضافية">
+                <button class="slider-btn next" onclick="changeSlide('slider-lc71soft', 1)">›</button>
+            </div>
+            <div class="car-details">
+                <h4>لاندكروزر الكبسولة (LC71 Soft Top)</h4>
+                <p class="car-specs">المواصفات: بيج ربع طربوش / مكشوف الخلف <br> الموديل: 1990 - 2006 <br> المحرك: البخاخ العادي / 4500</p>
+                <div class="car-price">حالة نادرة - جاهز للطلب</div>
+                <div class="card-actions">
+                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20الكبسولة%20ربع%20طربوش" target="_blank" class="btn-action btn-whatsapp">طلب استيراد</a>
+                    <a href="tel:+967777577781" class="btn-action btn-call">إتصال</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. لاندكروزر ربع مقفل مقفص -->
+        <div class="car-card">
+            <div class="image-slider" id="slider-lc71hard">
+                <button class="slider-btn prev" onclick="changeSlide('slider-lc71hard', -1)">‹</button>
+                <img class="active" src="1780666917980.jpg" alt="لاندكروزر ربع مقفل">
+                <img src="FB_IMG_1629841895054.jpg" alt="ربع مقفل زاوية أخرى">
+                <button class="slider-btn next" onclick="changeSlide('slider-lc71hard', 1)">›</button>
+            </div>
+            <div class="car-details">
+                <h4>لاندكروزر ربع (LC71 Hard Top)</h4>
+                <p class="car-specs">المواصفات: أسود / رمادي غامق مقفل <br> الموديل: 2014 - 2022 <br> المحرك: V6 (4.0L)</p>
+                <div class="car-price">مواصفات خليجية ممتازة</div>
+                <div class="card-actions">
+                    <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20الاستفسار%20عن%20اللاندكروزر%20الربع%20المقفل" target="_blank" class="btn-action btn-whatsapp">طلب استيراد</a>
+                    <a href="tel:+967777577781" class="btn-action btn-call">إتصال</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <section class="import-banner">
         <h3>طلبك الخاص والمحركات يصلك مباشرة</h3>
-        <p>نوفر خدمة فحص، شراء، شحن وتخليص أي نوع من السيارات أو المحركات الميكانيكية وقطع الغيار من دولة الإمارات العربية المتحدة مباشرة إلى مستودعاتنا في اليمن بموثوقية عالية وعقود رسمية.</p>
-        <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20طلب%20استيراد%20(سيارة%20/%20محرك)%20بمواصفات%20خاصة" target="_blank" class="btn-import">طلب استيراد سيارة أو محرك خاص 💬</a>
-    </section>
-
-    <section class="reviews-section">
-        <h3 style="font-size: 1.8rem; margin-bottom: 10px;">ماذا يقول عملاؤنا على Google Maps</h3>
-        <p style="color: #666;">التقييم العام: ⭐⭐⭐⭐⭐ (5/5)</p>
-        
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p style="font-weight: bold; margin-bottom: 5px;">أبو فهد الحاشدي</p>
-                <p style="color: #555; font-size: 0.95rem;">"تعامل راقي جداً ومصداقية في فحص ومواصفات السيارات المستوردة. أنصح بالتعامل معهم بشدة."</p>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                <p style="font-weight: bold; margin-bottom: 5px;">المهندس خالد</p>
-                <p style="color: #555; font-size: 0.95rem;">"طلبت منهم محرك تويوتا لاندكروزر من الإمارات ووصل بفرز نظيف وحالة ممتازة والتزام بالوقت."</p>
-            </div>
-        </div>
-        
-        <div style="margin-top: 30px;">
-            <a href="https://maps.google.com" target="_blank" style="display: inline-block; padding: 10px 25px; background-color: #f1f1f1; color: #333; text-decoration: none; border-radius: 5px; font-weight: bold; border: 1px solid #ccc;">📍 شاهد موقعنا الجغرافي وكافة التقييمات</a>
-        </div>
+        <p>نوفر خدمة فحص، شراء، شحن وتخليص أي نوع من السيارات أو المحركات الميكانيكية وقطع الغيار من دولة الإمارات العربية المتحدة مباشرة إلى مستودعاتنا في اليمن بموثوقية عالية وعقود رسمية تضمن حقك.</p>
+        <a href="https://wa.me/967777577781?text=مرحباً%20معرض%20السيادة،%20أود%20طلب%20استيراد%20خاص" target="_blank" class="btn-import">طلب استيراد سيارة أو محرك خاص 💬</a>
     </section>
 
     <footer>
@@ -410,7 +426,6 @@
     </div>
 
     <script>
-        // دالة التبديل بين مخزون اليمن ومخزون الإمارات
         function switchTab(tabId) {
             document.querySelectorAll('.showroom-section').forEach(sec => sec.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
@@ -419,7 +434,6 @@
             event.currentTarget.classList.add('active');
         }
 
-        // دالة تصفح الصور عبر الأسهم يميناً ويساراً
         function changeSlide(sliderId, direction) {
             const slider = document.getElementById(sliderId);
             const images = slider.querySelectorAll('img');
